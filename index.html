@@ -21,6 +21,12 @@
 
   <!-- Cascading stylesheet if required -->
   <link rel="stylesheet" href="css/style.css">
+  <!-- icons -->
+  <link href="css\weather-icons.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-light">
 
   <nav class="navbar navbar-expand-lg navbar-light bg-white">
     <div class="container-fluid">
@@ -38,10 +44,10 @@
               Plots
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="MaxTemperature.html">Max Temperature</a>
-              <a class="dropdown-item" href="Humidity.html">Humidity</a>
-              <a class="dropdown-item" href="Cloudiness.html">Cloudiness</a>
-              <a class="dropdown-item" href="WindSpeed.html">Wind Speed</a>
+              <a class="dropdown-item" href="MaxTemperature.html"><i class="wi wi-thermometer pr-2"></i>Max Temperature</a>
+              <a class="dropdown-item" href="Humidity.html"><i class="wi wi-humidity pr-2"></i>Humidity</a>
+              <a class="dropdown-item" href="Cloudiness.html"><i class="wi wi-cloudy pr-2"></i>Cloudiness</a>
+              <a class="dropdown-item" href="WindSpeed.html"><i class="wi wi-windy pr-2"></i>Wind Speed</a>
             </div>
           </li>
           <li class="nav-item">
@@ -58,31 +64,25 @@
     </div>
   </nav>
 
-</head>
-
-<body class="bg-light">
-
   <div class="container-fluid">
     <div class="row p-4 bg-light">
       <!--Normally these medium columns go 8/4 wide on small screen sizes-->
       <div class="col-sm-12 col-md-7 m-2 p-4">
-        <h2 class="text-info">Summary: Lattitude vs. X</h2>
+        <h2 class="text-info">Summary: Lattitude vs. <i class="wi wi-thermometer pr-2"></i><i class="wi wi-humidity pr-2"></i><i class="wi wi-cloudy pr-2"></i><i class="wi wi-windy pr-2"></i></h2>
         <div class="row">
           <!-- <span class="col-sm-12 col-md-3"> -->
-          <span class="col-sm-12 col-md-3">
-            <a href="MaxTemperature.html"><img class="img-fluid width:10% height:10% float-left"
+          <div class="col-sm-12 col-md-12">
+            <!-- Note that width and height statement in class does not work to size the text -->
+            <a href="MaxTemperature.html"><img class="float-left" style="width:150px;height:150px"
                 src="assets/images/Fig1.png" alt="Responsive image"></a>
-          </span>
-          <!-- <div class="col-sm-12 col-md-9"> -->
-          <p>The purpose of this project was to analyse how weather changes as you get closer to the equator. To
-            accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over
-            500 cities.</p>
-          <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude.
-            Factors we looked at included: temperature, cloudiness, wind speed and humidity. This site provides the
-            source data and visualizations created as part of the analysis, as well as explanations and descriptions
-            of any trends and correlations witnessed.</p>
-          <!-- <hr />
-          </div> -->
+            <p>The purpose of this project was to analyse how weather changes as you get closer to the equator. To
+              accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over
+              500 cities.</p>
+            <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude.
+              Factors we looked at included: temperature, cloudiness, wind speed and humidity. This site provides the
+              source data and visualizations created as part of the analysis, as well as explanations and descriptions
+              of any trends and correlations witnessed.</p>
+          </div>
         </div>
       </div>
       <div class="col-sm-12 col-md-4 m-2 p-4">
@@ -112,11 +112,6 @@
     </div>
   </div>
   <!--
-    These are full wide on a medium screen, half wide on a small screen, 1/4 wide on an extra small screen-->
-  <!-- <div class="row">
-        <div class="col-3 col-sm-6 col-md-12">
-          <div class="box red">col-xs-3 col-sm-6 col-md-12</div>
-        </div> -->
 
 </body>
 
