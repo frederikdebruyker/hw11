@@ -8,5 +8,7 @@ The instructions call for:
 - images: provided images uses as I think using my own from previous exercises (and resizing etc) does not add to what I believe is the goal of this homework;
 
 Note:
-- added References section
-- considered having one generic navigation 'include' so it would not have to be repeated. I understand that this should be possible with SHTML and/or JS but as we have not gone through this, neither option was retained. I left the headerTemplate.jsp file in for reference.
+- added References section;
+- use of weather-icons.css;
+- minimal use of overriding local stylesheet;
+- considered having one generic navigation 'include' so it would not have to be repeated. I understand that this should be possible with SHTML and/or JS but as we have not gone through this, neither option was retained. I left the headerTemplate.jsp file in for reference;
